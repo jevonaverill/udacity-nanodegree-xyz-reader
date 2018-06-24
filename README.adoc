@@ -1,0 +1,3 @@
+= XYZ Reader
+
+This repository stores XYZ Reader project in Udacity's Android Nanodegree.
