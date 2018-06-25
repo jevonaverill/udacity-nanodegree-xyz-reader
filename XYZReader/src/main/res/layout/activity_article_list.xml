@@ -7,20 +7,20 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:elevation="4dp"
+        android:layout_height="@dimen/bar_height"
+        android:elevation="@dimen/app_bar_elevation"
         android:fitsSystemWindows="true"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_container"
             android:layout_width="match_parent"
-            android:layout_height="112dp"
-            android:background="?attr/colorPrimaryDark"
-            android:elevation="8dp"
+            android:layout_height="@dimen/bar_height"
+            android:background="?attr/colorPrimary"
+            android:elevation="@dimen/collapsing_toolbar_elevation"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimaryDark"
-            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginStart="@dimen/collapsing_toolbar_expanded_title_margin_start"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed">
 
             <android.support.v7.widget.Toolbar
@@ -58,10 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingBottom="28dp"
+            android:paddingBottom="@dimen/bar_padding"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
-            android:paddingTop="112dp"
+            android:paddingTop="@dimen/bar_height"
             android:scrollbarStyle="outsideOverlay" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
